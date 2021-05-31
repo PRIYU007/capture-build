@@ -29,7 +29,7 @@ button{
         color: white;
     }
 }
-h2{
+ h2{
         font-weight:lighter;
         font-size:4rem;
     }
@@ -38,7 +38,7 @@ h2{
     }
     h4{
         font-weight:bold;
-        
+        font-size:2rem;
     }
     a{
         font-size:1.1rem;
