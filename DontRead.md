@@ -10,6 +10,15 @@ Framer Motion
 // 2. <motion.h2 variants={titleAnim} initial="hidden" animate="show">
 // 3. Stagger (if you add a parent variant and you have bunch of children you can stagger them)
 
+To Remove staggering on specific item add initial & animate on it
+^^ <motion.img
+variants={photoAnim}
+initial="hidden"
+animate="show"
+src={home1}
+alt="guy with a camera"
+/>
+
 // framer motion variants
 const titleAnim = {
 hidden: { opacity: 0 },
