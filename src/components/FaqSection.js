@@ -3,9 +3,19 @@ import { About } from '../styles';
 import Toggle from './Toggle';
 import { AnimateSharedLayout } from 'framer-motion';
 // Detects if our layout change if it did then animate it
+
+import { useScroll } from './useScroll';
+import { scrollReveal } from '../animation';
+
 const FaqSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <Faq>
+    <Faq
+      variants={scrollReveal}
+      animate={controls}
+      ref={element}
+      initial="hidden"
+    >
       <h2>
         Any Questions <span>FAQ</span>
       </h2>

@@ -12,6 +12,7 @@ import { Switch, Route, useLocation } from 'react-router-dom';
 
 // Animation
 import { AnimatePresence } from 'framer-motion';
+
 function App() {
   // Gives us key of each page which help in page transition
   const location = useLocation();

@@ -42,3 +42,32 @@ animate="show"
 className="title">
 
 </motion.div>
+
+<------------------------------------>
+Way to fix auto formatting in globalStyle
+1 . import \* as styled from 'styled-components';
+
+const GlobalStyles = styled.createGlobalStyle`
+
+- {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+  `;
+
+export default GlobalStyles;
+
+2./
+import { createGlobalStyle, css } from 'styled-components';
+
+export default createGlobalStyle`${css`
+html,
+body,
+#root {
+padding: 0px;
+margin: 0px;
+width: 100vw;
+height: 100vh;
+}
+`}`;
