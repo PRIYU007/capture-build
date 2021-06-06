@@ -41,7 +41,7 @@ const ContactUs = () => {
                 icon={faGithub}
                 size="3x"
                 cursor="pointer"
-                spin="true"
+                spin={true}
               />
             </a>
           </Social>
