@@ -71,3 +71,5 @@ width: 100vw;
 height: 100vh;
 }
 `}`;
+
+We cannot add padding margin top and bottom on inline items(like <a></a> tag) then make it display:inline-block;
